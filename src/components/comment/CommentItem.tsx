@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { type AppDispatch, type RootState } from '@/store/store';
-import { getCommentReplies, deleteComment, updateComment, createReply, likeComment, unlikeComment } from '@/store/slice/commentSlice';
+import { deleteComment, updateComment, createReply, likeComment, unlikeComment } from '@/store/slice/commentSlice';
 import Avatar from '../shared/Avatar';
-import { Heart, Trash2, Edit2, Check, X, MessageCircle } from 'lucide-react';
+import { Heart, Trash2, Edit2, X } from 'lucide-react';
 import userService from '@/services/userService';
 
 interface CommentItemProps {
@@ -26,7 +26,7 @@ export default function CommentItem({ comment, postId, userIdPicture, parentId }
   const [isLiked, setIsLiked] = useState(comment.likes > 0);
   const [likesCount, setLikesCount] = useState(comment.likes || 0);
   const replies = useSelector((state: RootState) => state.comments.replies[comment._id]) || [];
-  const isLoading = useSelector((state: RootState) => state.comments.replyLoading[comment._id]);
+  // const isLoading = useSelector((state: RootState) => state.comments.replyLoading[comment._id]);
   const hasReplies = (replies && replies.length > 0) || (comment.repliesCount > 0);
   const commentOwnerId = comment.userId?._id || comment.userId;
   const isOwner = currentUser?._id === commentOwnerId;

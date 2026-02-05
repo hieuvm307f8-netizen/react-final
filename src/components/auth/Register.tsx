@@ -7,7 +7,6 @@ import { NavLink, useNavigate } from "react-router-dom";
 import { accessUser } from "@/store/slice/authSlice";
 import type { AppDispatch } from "@/store/store";
 
-// --- Logic Schema Giữ Nguyên ---
 const schema = z.object({
   fullName: z.string().min(2, "Name has to be 2 characters"),
   username: z.string().min(3, "Username must be 3 characters or more"),
@@ -34,13 +33,12 @@ export default function Register() {
   const {
     register,
     handleSubmit,
-    formState: { errors, isValid, isSubmitting }, // Thêm isSubmitting để disable nút khi đang gửi
+    formState: { errors, isSubmitting }, 
   } = useForm<RegisterFormInputs>({
     mode: "onChange",
     resolver: zodResolver(schema),
   });
 
-  // --- Logic Submit Giữ Nguyên ---
   const onsubmit = async (data: RegisterFormInputs) => {
     const payload = {
       email: data.email,

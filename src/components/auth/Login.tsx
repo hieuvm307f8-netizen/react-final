@@ -1,15 +1,13 @@
-import { useSelector, useDispatch } from "react-redux";
+import {useDispatch } from "react-redux";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { NavLink, useNavigate } from "react-router-dom";
 import { accessUser } from "@/store/slice/authSlice";
-import type { AppDispatch, RootState } from "@/store/store";
-import authService from "@/services/authService";
+import type { AppDispatch } from "@/store/store";
 import { useState } from "react";
 
-// --- Logic Schema Giữ Nguyên ---
 const schema = z.object({
   email: z
     .string()
@@ -38,7 +36,6 @@ export default function Login() {
     resolver: zodResolver(schema),
   });
 
-  // --- Logic Submit Giữ Nguyên ---
   const onsubmit = async (data: LoginFormInputs) => {
     setEmailForResend(data.email);
     const resultAction = await dispatch(accessUser({ data, type: "login" }));
