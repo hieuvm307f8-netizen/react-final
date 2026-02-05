@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { searchUsers, clearSearchResults } from "@/store/slice/userSlice";
 import Avatar from "@/components/shared/Avatar";
 import { NavLink } from "react-router-dom";
-import { X, XCircle } from "lucide-react";
+import { X } from "lucide-react";
 import { type AppDispatch, type RootState } from "@/store/store";
 import { addHistoryItem, clearAllHistory, deleteHistoryItem, fetchSearchHistory } from "@/store/slice/searchHistorySlice";
 import { Spinner } from "../ui/spinner";

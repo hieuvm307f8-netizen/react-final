@@ -17,13 +17,13 @@ export default function EditProfileModal({ isOpen, onClose }: { isOpen: boolean,
   });
   const [file, setFile] = useState<File | null>(null);
 
-  const [passData, setPassData] = useState({
+  const [, setPassData] = useState({
     currentPassword: "",
     newPassword: "",
     confirmPassword: ""
   });
-  const [passError, setPassError] = useState("");
-  const [successMsg, setSuccessMsg] = useState("");
+  const [, setPassError] = useState("");
+  const [, setSuccessMsg] = useState("");
 
   useEffect(() => {
     if (isOpen) {
@@ -49,27 +49,27 @@ export default function EditProfileModal({ isOpen, onClose }: { isOpen: boolean,
     onClose();
   };
 
-  const handlePasswordSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setPassError("");
-    setSuccessMsg("");
+  // const handlePasswordSubmit = async (e: React.FormEvent) => {
+  //   e.preventDefault();
+  //   setPassError("");
+  //   setSuccessMsg("");
 
-    if (passData.newPassword !== passData.confirmPassword) {
-      setPassError("Passwords do not match");
-      return;
-    }
+  //   if (passData.newPassword !== passData.confirmPassword) {
+  //     setPassError("Passwords do not match");
+  //     return;
+  //   }
 
-    if (passData.newPassword.length < 6) {
-      setPassError("Password must be 6 characters or more");
-      return;
-    }
+  //   if (passData.newPassword.length < 6) {
+  //     setPassError("Password must be 6 characters or more");
+  //     return;
+  //   }
 
-    const result = await dispatch(changeUserPassword(passData));
-    if (changeUserPassword.fulfilled.match(result)) {
-      setSuccessMsg("Password changed successfully");
-      setPassData({ currentPassword: "", newPassword: "", confirmPassword: "" });
-    }
-  };
+  //   const result = await dispatch(changeUserPassword(passData));
+  //   if (changeUserPassword.fulfilled.match(result)) {
+  //     setSuccessMsg("Password changed successfully");
+  //     setPassData({ currentPassword: "", newPassword: "", confirmPassword: "" });
+  //   }
+  // };
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>

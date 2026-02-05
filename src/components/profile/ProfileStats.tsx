@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import FollowState from "../viewFollowState/FollowState";
 import type { AppDispatch } from "@/store/store";
 import { useDispatch } from "react-redux";

@@ -5,7 +5,7 @@ interface PostCardProps {
   loading: boolean;
 }
 
-export default function PostCard({ posts, loading }: PostCardProps) {
+export default function PostCard({ posts }: PostCardProps) {
   return (
     <>
       {posts.map((data) => <PostItem key={data._id} data={data} />)}

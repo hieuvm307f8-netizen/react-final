@@ -7,7 +7,7 @@ import { Spinner } from "../ui/spinner";
 
 export default function Middleware() {
   const dispatch = useDispatch<AppDispatch>();
-  const { currentUser, accessToken, loading } = useSelector((state: RootState) => state.auth);
+  const { currentUser, accessToken } = useSelector((state: RootState) => state.auth);
   const [isChecking, setIsChecking] = useState(true);
 
   useEffect(() => {

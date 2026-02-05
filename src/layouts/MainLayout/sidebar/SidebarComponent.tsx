@@ -1,5 +1,5 @@
 import { ActivitySquare, AlertTriangle, Bookmark, CompassIcon, Heart, Home, Instagram, Menu, PlaySquareIcon, Plus, Search, Send, Settings, Sun } from "lucide-react"
-import { Navigate, NavLink, useNavigate } from "react-router-dom";
+import {NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import {
   Sidebar,
