@@ -1,0 +1,192 @@
+import type { TPostComments } from "@/type/comment";
+
+export const CommentData: TPostComments[] = [
+  {
+    postId: 1,
+    comments: [
+      {
+        id: 1,
+        username: "Sky_No1",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Nhạc hay quá anh ơi!",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 2,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 20,
+      },
+      {
+        id: 3,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 4,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 5,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 6,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 7,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 8,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 9,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+    ]
+  },
+  {
+    postId: 2,
+    comments: [
+      {
+        id: 101,
+        username: "Sky_No2",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Nhạc hay quá anh ơi!",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 122,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 63,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 94,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+    ]
+  },
+  {
+    postId: 3,
+    comments: [
+      {
+        id: 11,
+        username: "Sky_No3",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Nhạc hay quá anh ơi!",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 12,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 61,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 91,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+    ]
+  },
+  {
+    postId: 4,
+    comments: [
+      {
+        id: 151,
+        username: "Sky_No4",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Nhạc hay quá anh ơi!",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 16,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 65,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",    
+        isLiked: false,
+        likesCount: 10,
+      },
+      {
+        id: 95,
+        username: "Music_Lover",
+        avatarUrl: 'https://github.com/shadcn.png',
+        commentContent: "Hóng MV mới quá ạ",
+        isLiked: false,
+        likesCount: 10,
+      },
+    ]
+  },
+];
