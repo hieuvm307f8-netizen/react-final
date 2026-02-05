@@ -19,7 +19,7 @@ export default function VerifyEmail() {
           setStatus("success");
           setTimeout(() => navigate("/login"), 2000);
         })
-        .catch((err) => {
+        .catch(() => {
           setStatus("error");
         });
     }

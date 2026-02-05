@@ -1,5 +1,4 @@
 import Posts from '@/components/posts/Posts'
-import Header from '@/layouts/MainLayout/Header'
 import Suggestion from '@/layouts/Suggestion'
 
 export default function Home() {

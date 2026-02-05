@@ -4,7 +4,7 @@ import { type AppDispatch, type RootState } from "@/store/store";
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
 import Avatar from "../shared/Avatar";
-import { deleteProfilePicture, updateCurrentUser, changeUserPassword } from "@/store/slice/authSlice";
+import { deleteProfilePicture, updateCurrentUser } from "@/store/slice/authSlice";
 import { Spinner } from "../ui/spinner";
 
 export default function EditProfileModal({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) {
