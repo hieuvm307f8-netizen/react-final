@@ -6,8 +6,7 @@ import type { AppDispatch, RootState } from "@/store/store";
 import { createNewPost } from "@/store/slice/postsSlice";
 import Avatar from "../shared/Avatar";
 import { useState, useRef } from "react";
-import { Image, ArrowLeft } from "lucide-react"; // Thay đổi icon cho giống hơn
-import { Spinner } from "../ui/spinner";
+import { ArrowLeft } from "lucide-react"; 
 
 type Props = {
   onClose: () => void;
