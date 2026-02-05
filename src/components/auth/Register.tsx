@@ -62,9 +62,7 @@ export default function Register() {
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50 p-4">
       <div className="flex flex-col gap-3 w-[350px]">
         
-        {/* Box 1: Main Register Form */}
         <div className="bg-white border border-gray-300 px-10 py-8 flex flex-col items-center">
-          {/* Logo */}
           <div className="flex justify-center mb-4 mt-2">
              <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/800px-Instagram_logo.svg.png"
@@ -73,12 +71,10 @@ export default function Register() {
               />
           </div>
 
-          {/* Subtitle */}
           <h2 className="text-[#737373] font-semibold text-[17px] text-center mb-5 leading-5">
             Sign up to see photos and videos from your friends.
           </h2>
 
-          {/* Social Button (Visual only - Mockup) */}
           <button type="button" className="w-full bg-[#0095f6] hover:bg-[#1877f2] text-white text-sm font-semibold rounded-[8px] py-1.5 flex items-center justify-center gap-2 mb-4">
              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
                 <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
@@ -86,14 +82,12 @@ export default function Register() {
              Log in with Facebook
           </button>
 
-          {/* Divider */}
           <div className="flex items-center w-full mb-4">
             <div className="h-[1px] bg-gray-200 flex-1"></div>
             <span className="px-4 text-gray-500 text-[13px] font-bold">OR</span>
             <div className="h-[1px] bg-gray-200 flex-1"></div>
           </div>
 
-          {/* Form Fields */}
           <form onSubmit={handleSubmit(onsubmit)} className="flex flex-col gap-1.5 w-full">
             <div className="flex flex-col">
               <input
@@ -143,7 +137,6 @@ export default function Register() {
               {errors.confirmPassword && <span className="text-red-500 text-[10px] mt-1 flex items-center gap-1">✕ {errors.confirmPassword.message}</span>}
             </div>
 
-            {/* Terms Text (Static UI to match Instagram) */}
             <div className="text-center mt-2 mb-2">
                 <p className="text-[12px] text-gray-500 leading-4">
                   People who use our service may have uploaded your contact information to Instagram. <span className="text-[#00376b] font-semibold">Learn More</span>
@@ -163,7 +156,6 @@ export default function Register() {
           </form>
         </div>
 
-        {/* Box 2: Login Link */}
         <div className="bg-white border border-gray-300 p-5 flex justify-center items-center">
           <span className="text-sm text-gray-800">
             Have an account?{" "}
@@ -173,7 +165,6 @@ export default function Register() {
           </span>
         </div>
 
-        {/* Box 3: Get the App */}
         <div className="flex flex-col items-center gap-4 mt-1">
             <span className="text-sm text-gray-800">Get the app.</span>
             <div className="flex gap-2">

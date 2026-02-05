@@ -187,7 +187,6 @@ export default function AddPosts({ onClose }: Props) {
   );
 }
 
-// Component phụ cho nút Select (để code gọn hơn)
 const ButtonTypeLabel = ({ onClick }: { onClick: () => void }) => (
     <button
       type="button"

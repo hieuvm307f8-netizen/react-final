@@ -68,7 +68,6 @@ export default function Login() {
     <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
       <div className="flex w-full max-w-[850px] justify-center items-center gap-8">
         
-        {/* --- Phần Hình Ảnh (Giống Instagram Web - Ẩn trên mobile) --- */}
         <div className="hidden md:block w-[380px] h-[580px] relative">
           <img
             src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -77,12 +76,9 @@ export default function Login() {
           />
         </div>
 
-        {/* --- Phần Form Login --- */}
         <div className="flex flex-col gap-3 w-[350px]">
           
-          {/* Box 1: Form Chính */}
           <div className="flex flex-col bg-white border border-gray-300 p-8 pb-4">
-            {/* Logo Instagram */}
             <div className="flex justify-center mb-8 mt-2">
               <img
                 src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2a/Instagram_logo.svg/800px-Instagram_logo.svg.png"
@@ -129,17 +125,14 @@ export default function Login() {
               </Button>
             </form>
 
-            {/* OR Divider */}
             <div className="flex items-center my-5 w-full">
               <div className="h-[1px] bg-gray-200 flex-1"></div>
               <span className="px-4 text-gray-500 text-[13px] font-semibold">OR</span>
               <div className="h-[1px] bg-gray-200 flex-1"></div>
             </div>
 
-            {/* Social Login & Forgot Password */}
             <div className="flex flex-col items-center gap-4 mb-4">
               <button className="flex items-center gap-2 text-[#385185] font-semibold text-sm cursor-pointer hover:text-[#1877f2] transition-colors">
-                {/* Facebook Icon SVG */}
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
                   <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
                 </svg>
@@ -164,7 +157,6 @@ export default function Login() {
             </div>
           </div>
 
-          {/* Box 2: Sign Up Prompt (Tách rời theo style Instagram) */}
           <div className="bg-white border border-gray-300 p-5 flex justify-center items-center">
             <span className="text-sm text-gray-800">
               Don't have an account?{" "}
@@ -174,7 +166,6 @@ export default function Login() {
             </span>
           </div>
 
-          {/* Get the app section */}
           <div className="flex flex-col items-center gap-4 mt-1">
             <span className="text-sm text-gray-800">Get the app.</span>
             <div className="flex gap-2">
