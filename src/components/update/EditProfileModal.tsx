@@ -6,8 +6,6 @@ import { Button } from "@/components/ui/button";
 import Avatar from "../shared/Avatar";
 import { deleteProfilePicture, updateCurrentUser, changeUserPassword } from "@/store/slice/authSlice";
 import { Spinner } from "../ui/spinner";
-import { Input } from "@/components/ui/input"; // Giả sử bạn có component Input, nếu không dùng thẻ input thường
-import { Label } from "@/components/ui/label"; // Giả sử bạn có component Label
 
 export default function EditProfileModal({ isOpen, onClose }: { isOpen: boolean, onClose: () => void }) {
   const dispatch = useDispatch<AppDispatch>();
@@ -138,7 +136,7 @@ export default function EditProfileModal({ isOpen, onClose }: { isOpen: boolean,
                 className="w-full bg-[#0095f6] hover:bg-[#1877f2] text-white font-semibold rounded-lg h-9 text-sm" 
                 disabled={loading}
             >
-              {loading ? <Spinner size="small" /> : "Submit"}
+              {loading ? <Spinner /> : "Submit"}
             </Button>
           </form>
 
